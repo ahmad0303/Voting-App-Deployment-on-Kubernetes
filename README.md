@@ -102,6 +102,9 @@ kubectl get services
 ## Accessing the Application
 
 ### Voting App:
+```bash
+minikube service voting-service --url
+```
 Open your browser and navigate to:
 ```
 http://<cluster-ip>:30004
@@ -109,6 +112,9 @@ http://<cluster-ip>:30004
 Replace `<cluster-ip>` with your Kubernetes cluster's IP address.
 
 ### Result App:
+```bash
+minikube service result-service --url
+```
 Open your browser and navigate to:
 ```
 http://<cluster-ip>:30005
